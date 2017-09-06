@@ -12,7 +12,7 @@ fn main() {
 
     for i in 0..MAX_VAL {
         if div_by_3(i) || div_by_5(i) {
-            sum = sum + i;
+            sum += i;
         }
     }
     println!("The sum is {}", sum);

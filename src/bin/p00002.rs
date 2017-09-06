@@ -19,13 +19,13 @@ fn main() {
 
     while b <= FIB_MAX {
         if count == 0 {
-            sum = sum + b;
+            sum += b;
         }
 
         let x = calc_fib(a, b);
         a = x.0;
         b = x.1;
-        
+
         count = (count + 1) % 3;
     }
 
